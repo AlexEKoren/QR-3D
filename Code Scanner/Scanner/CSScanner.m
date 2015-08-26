@@ -84,6 +84,7 @@
         [self.captureDevice setTorchMode:AVCaptureTorchModeOff];
     }
     [self.captureDevice unlockForConfiguration];
+    [self.delegate flashDidToggle:flashOn];
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
@@ -137,8 +138,8 @@
 }
 
 - (void)stopScanning {
-    self.flashOn = NO;
     [self.captureSession stopRunning];
+    self.flashOn = NO;
 }
 
 @end

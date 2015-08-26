@@ -57,10 +57,6 @@
 - (void)setFlashOn:(BOOL)flashOn {
     _flashOn = flashOn;
     self.scanner.flashOn = flashOn;
-    if (flashOn)
-        [self.view.flashButton setBackgroundImage:[UIImage imageNamed:@"bulbOn.png"] forState:UIControlStateNormal];
-    else
-        [self.view.flashButton setBackgroundImage:[UIImage imageNamed:@"bulbOff.png"] forState:UIControlStateNormal];
 }
 
 - (void)didScanMetadata:(AVMetadataMachineReadableCodeObject*)metadata {
@@ -71,6 +67,15 @@
 
 - (void)didAnimatePoints {
     [self.view presentData:self.view.qrCodeOverlayView.stringData];
+}
+
+- (void)flashDidToggle:(BOOL)flashOn {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (flashOn)
+            [self.view.flashButton setBackgroundImage:[UIImage imageNamed:@"bulbOn.png"] forState:UIControlStateNormal];
+        else
+            [self.view.flashButton setBackgroundImage:[UIImage imageNamed:@"bulbOff.png"] forState:UIControlStateNormal];
+    });
 }
 
 @end

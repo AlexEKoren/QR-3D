@@ -14,6 +14,7 @@
 
 - (void)didScanMetadata:(AVMetadataMachineReadableCodeObject*)metadata;
 - (void)didAnimatePoints;
+- (void)flashDidToggle:(BOOL)flashOn;
 
 @end
 
