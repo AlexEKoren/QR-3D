@@ -53,7 +53,7 @@
 		2F7154711B6298500099BCDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F7154791B6298500099BCDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F71547C1B6298500099BCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2F7154821B6298500099BCDC /* Code ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7154821B6298500099BCDC /* QR 3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR 3DTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7154871B6298500099BCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7154881B6298500099BCDC /* Code_ScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Code_ScannerTests.m; sourceTree = "<group>"; };
 		2F7154921B6298E90099BCDC /* CSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7154691B6298500099BCDC /* QR 3D.app */,
-				2F7154821B6298500099BCDC /* Code ScannerTests.xctest */,
+				2F7154821B6298500099BCDC /* QR 3DTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 			productReference = 2F7154691B6298500099BCDC /* QR 3D.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F7154811B6298500099BCDC /* Code ScannerTests */ = {
+		2F7154811B6298500099BCDC /* QR 3DTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F71548F1B6298500099BCDC /* Build configuration list for PBXNativeTarget "Code ScannerTests" */;
+			buildConfigurationList = 2F71548F1B6298500099BCDC /* Build configuration list for PBXNativeTarget "QR 3DTests" */;
 			buildPhases = (
 				2F71547E1B6298500099BCDC /* Sources */,
 				2F71547F1B6298500099BCDC /* Frameworks */,
@@ -273,9 +273,9 @@
 			dependencies = (
 				2F7154841B6298500099BCDC /* PBXTargetDependency */,
 			);
-			name = "Code ScannerTests";
+			name = "QR 3DTests";
 			productName = "Code ScannerTests";
-			productReference = 2F7154821B6298500099BCDC /* Code ScannerTests.xctest */;
+			productReference = 2F7154821B6298500099BCDC /* QR 3DTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F7154641B6298500099BCDC /* Build configuration list for PBXProject "Code Scanner" */;
+			buildConfigurationList = 2F7154641B6298500099BCDC /* Build configuration list for PBXProject "QR 3D" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -310,7 +310,7 @@
 			projectRoot = "";
 			targets = (
 				2F7154681B6298500099BCDC /* QR 3D */,
-				2F7154811B6298500099BCDC /* Code ScannerTests */,
+				2F7154811B6298500099BCDC /* QR 3DTests */,
 			);
 		};
 /* End PBXProject section */
@@ -515,7 +515,7 @@
 				);
 				INFOPLIST_FILE = "Code ScannerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "QR 3DTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Code Scanner.app/Code Scanner";
 			};
 			name = Debug;
@@ -530,7 +530,7 @@
 				);
 				INFOPLIST_FILE = "Code ScannerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "QR 3DTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Code Scanner.app/Code Scanner";
 			};
 			name = Release;
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F7154641B6298500099BCDC /* Build configuration list for PBXProject "Code Scanner" */ = {
+		2F7154641B6298500099BCDC /* Build configuration list for PBXProject "QR 3D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F71548A1B6298500099BCDC /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F71548F1B6298500099BCDC /* Build configuration list for PBXNativeTarget "Code ScannerTests" */ = {
+		2F71548F1B6298500099BCDC /* Build configuration list for PBXNativeTarget "QR 3DTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F7154901B6298500099BCDC /* Debug */,
